@@ -13,7 +13,7 @@ const app = express();
 // }).catch(() => {
 //     console.log("Failed to connect to DB")
 // });
-const port = 3000;
+const port = process.env.PORT || 3000;
 const protectedRoute = express.Router();
 
 app.use(express.json());
